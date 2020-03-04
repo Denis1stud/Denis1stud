@@ -31,8 +31,12 @@
   <catalogs>Catalog.Сотрудники</catalogs>
   <catalogs>Catalog.Товар</catalogs>
   <catalogs>Catalog.Контрагенты</catalogs>
+  <catalogs>Catalog.Склад</catalogs>
   <documents>Document.ПриемНаРаботу</documents>
   <documents>Document.Увольнение</documents>
   <documents>Document.ВводНовогоТС</documents>
+  <documents>Document.ОтправкаВРейс</documents>
+  <documents>Document.ПоставкаТовара</documents>
   <accumulationRegisters>AccumulationRegister.ПриемИУвольнениеСотрудников</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ПоставкаИОтправкаТоваров</accumulationRegisters>
 </mdclass:Configuration>

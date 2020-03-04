@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72283ee7-a82a-4a45-aee7-74d9384e7f50">
+  <producedTypes>
+    <selectionType typeId="171a14f2-99d0-4b34-af5e-e77b9128e6c7" valueTypeId="dfceceeb-efa6-4eff-b821-e98c3198576f"/>
+    <listType typeId="2c9b981f-4a60-4d09-9264-53ceecb36f51" valueTypeId="e0185040-0e26-4973-bad0-501b065a0ee6"/>
+    <managerType typeId="1c738645-6596-4667-b2ab-8623525d79df" valueTypeId="7d1dfc22-b216-4a8a-91e6-92326dfa74ac"/>
+    <recordSetType typeId="6cd2b5d5-3386-494c-83d9-9f9d6ec37acb" valueTypeId="dc1f1bf6-d90c-45c6-9371-265ddb4469eb"/>
+    <recordKeyType typeId="9e9c62da-f07d-4beb-996f-26de76830fe0" valueTypeId="786cadb6-74c4-49ef-8ba0-f503961a69fc"/>
+    <recordType typeId="2bb1eac2-4dbe-49ee-87b3-469aad145f4f" valueTypeId="e0483280-c59f-414b-b3e6-ef20b03f95a5"/>
+  </producedTypes>
+  <name>ПоставкаИОтправкаТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поставка и отправка товаров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="96fd67dd-8892-4a7f-a6a5-c7a6f73bbefc">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="c9d7475c-6954-49c8-bcf6-d23e71af5116">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="e6be7443-a4e1-44c1-97f4-b227d902ff39">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="db11199b-8aca-4f30-b11c-0d9220daf596">
+    <name>Товар</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товар</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Товар</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="65acff8c-e67e-4fa7-a19b-8cd486d3a21d">
+    <name>АдресОТкуда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес о ткуда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склад</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4fd586b9-bc08-4d2e-a5c1-7a3d9d35d149">
+    <name>АдресКуда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес куда</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

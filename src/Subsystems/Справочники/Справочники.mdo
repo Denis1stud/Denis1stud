@@ -11,4 +11,5 @@
   <content>Catalog.Сотрудники</content>
   <content>Catalog.Товар</content>
   <content>Catalog.Контрагенты</content>
+  <content>Catalog.Склад</content>
 </mdclass:Subsystem>

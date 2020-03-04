@@ -10,4 +10,6 @@
   <content>Document.ПриемНаРаботу</content>
   <content>Document.ВводНовогоТС</content>
   <content>Document.Увольнение</content>
+  <content>Document.ПоставкаТовара</content>
+  <content>Document.ОтправкаВРейс</content>
 </mdclass:Subsystem>

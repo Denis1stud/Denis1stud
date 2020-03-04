@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3269304-e4e2-4723-a96d-d82bcef43e35">
+  <producedTypes>
+    <objectType typeId="9d921024-096c-4bab-9a27-c94819f44b56" valueTypeId="44a64dbf-88f8-4d10-b196-c62796fa6486"/>
+    <refType typeId="c690c870-8650-48df-837b-83c8308e7375" valueTypeId="d331ab8e-30ab-4bdc-a302-af7036d995ec"/>
+    <selectionType typeId="f793f107-5465-4224-8573-93ef0e741923" valueTypeId="ece74250-b30b-484b-bbe8-dd2c0974ccc6"/>
+    <listType typeId="781efe5e-c432-4c30-9d1d-54bb5a1de4ae" valueTypeId="e86a1c46-3168-4940-9162-638b9d92b339"/>
+    <managerType typeId="43a681ef-2b30-405f-bfc8-d3c47934ce07" valueTypeId="02e23f0f-3556-4e25-a294-14597cdded44"/>
+  </producedTypes>
+  <name>ОтправкаВРейс</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка в рейс</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ОтправкаВРейс.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <registerRecords>AccumulationRegister.ПоставкаИОтправкаТоваров</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b13b8cca-2730-4353-ad75-376d22f8d385">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d4a67e27-9221-4ea7-a6a7-a09bb230e2e6">
+    <name>Водитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ce15ea64-9fb7-495f-a188-f49b713a11e1">
+    <name>Контрагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагенты</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="64c47e0e-5962-481b-b653-d77a5f430962">
+    <name>АдресДоставки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес доставки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dbd3d9d8-6051-4b31-a207-d78d472cc61b">
+    <name>АдресОтгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес отгрузки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склад</types>
+    </type>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="3d79e45b-1643-4af8-8643-c7104d804dce">
+    <producedTypes>
+      <objectType typeId="581b4fa7-fde8-409a-bc1b-3b4fc9b31f92" valueTypeId="41519892-af9b-4203-a6de-3659f782a0dc"/>
+      <rowType typeId="df0e81f9-c446-482b-81b0-3d3764f48172" valueTypeId="13408b2f-03ec-486e-acde-59fe3de484b8"/>
+    </producedTypes>
+    <name>ТабличнаяЧастьОтправкаВРейс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть отправка в рейс</value>
+    </synonym>
+    <attributes uuid="d9d7e7a6-2545-404b-bf12-88d88e6f1f79">
+      <name>Товар</name>
+      <synonym>
+        <key>ru</key>
+        <value>Товар</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Товар</types>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d5dece58-060e-49be-9437-ddfae0e481ce">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>20</precision>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="87e40d43-62ef-4fef-9120-cbb4fbe2168b">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>20</precision>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f754549f-02c1-4db7-986a-e84f31b87a6e">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>30</precision>
+        </numberQualifiers>
+      </type>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
