@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5312aa69-b2d6-4632-a8d1-3b030b95d134">
+  <producedTypes>
+    <selectionType typeId="0a8706e4-5491-42f5-8411-bdfbe1c2cc03" valueTypeId="030ed5db-467e-4f32-ac02-07e4bac1b9a8"/>
+    <listType typeId="8814ca49-3a50-4fe8-8300-c61401799cf3" valueTypeId="1a16196a-6d90-4c60-b5be-fadef21b9c22"/>
+    <managerType typeId="d79d5ebe-1bf5-4aec-9637-6ebbff8cedd2" valueTypeId="8deef0ed-554d-49a2-bcc3-b124432ed5cb"/>
+    <recordSetType typeId="4e1a8c98-927c-49da-a274-a69f18ada348" valueTypeId="634b54be-96ce-4975-af1c-4c3c1c3a382e"/>
+    <recordKeyType typeId="84b6fdf7-b90c-4cda-951d-363d3db771e8" valueTypeId="badfb3ef-d840-418a-9c7a-8326ffd09dda"/>
+    <recordType typeId="3a90e443-462f-4b86-a6da-b165500a3ed9" valueTypeId="891485e8-3860-40fd-b15b-a5b75da537f1"/>
+  </producedTypes>
+  <name>ПриемИУвольнениеСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прием и увольнение сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="13d2b885-bb5f-453d-b42e-ab9b4638834d">
+    <name>СНИЛС</name>
+    <synonym>
+      <key>ru</key>
+      <value>СНИЛС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>11</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="ca0a7070-fe02-4a48-825c-6c2c4cb00818">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="7f84b92f-836e-4aeb-b53f-aa7fcf9659c6">
+    <name>ФИО</name>
+    <synonym>
+      <key>ru</key>
+      <value>ФИО</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="347d8db9-91fe-4a94-92d3-1af042e4a4ee">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

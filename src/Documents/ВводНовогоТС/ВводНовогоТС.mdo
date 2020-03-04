@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3211b25d-252d-4578-8546-6a8ace67a029">
+  <producedTypes>
+    <objectType typeId="7183ee3e-e39d-43cc-95e5-fa6ae47054f3" valueTypeId="ba405645-c411-4a5b-8a03-99f93eca278a"/>
+    <refType typeId="28c15ff2-039a-490d-a17f-14c955a919d7" valueTypeId="5941fe33-37a8-462a-91f0-e219c1835b94"/>
+    <selectionType typeId="78adcadc-3ca0-4332-8641-6fbff6965f60" valueTypeId="5d99307d-3150-4cc3-a91a-85ca4e4aacac"/>
+    <listType typeId="f0465ff7-1f21-453f-bea6-455f23644113" valueTypeId="71029956-2629-474b-8f02-1e2cfd22020f"/>
+    <managerType typeId="dce053c0-4de6-4cdc-ae86-89d2b81c923a" valueTypeId="e490b767-605a-48e2-bba3-a9f14c4beafb"/>
+  </producedTypes>
+  <name>ВводНовогоТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод нового ТС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ВводНовогоТС.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="1f18767d-1600-4955-b54b-2a11aa30fb79">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>
